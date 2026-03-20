@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Testseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Willkommen auf meiner Testseite</h1>
+</header>
+
+<main>
+    <div class="box">
+        <h2>Über mich</h2>
+        <p>Das ist eine einfache HTML-Testseite.</p>
+    </div>
+
+    <div class="box">
+        <h2>Interaktion</h2>
+        <button onclick="zeigeNachricht()">Klick mich</button>
+    </div>
+</main>
+
+<script>
+    function zeigeNachricht() {
+        alert("Hallo! Dein Button funktioniert 🎉");
+    }
+</script>
+
+</body>
+</html>
